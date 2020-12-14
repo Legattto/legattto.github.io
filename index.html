@@ -17,11 +17,17 @@
     <option value="100">D100</option>
   </select>
   <label style="display: flex;">
+    <span style="margin-right: 10px;">How much dice?</span>
+    <input type="text" value="" name="dicecount" id="dicecount" size="10">
+  </label>
+  <label style="display: flex;">
     <span style="margin-right: 10px;">How much rolls?</span>
     <input type="text" value="" name="rollcount" id="rollcount" size="10">
   </label>
   <button type="button" id="roll">Roll</button>
-  <span style="display: none;" id="result"></span>
+  <span
+    style="display: block;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);font-size: 30px;width: 500px;word-break: break-all;"
+    id="result"></span>
   <script src="index.js"></script>
 </body>
 </html>
